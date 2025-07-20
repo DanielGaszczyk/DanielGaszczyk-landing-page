@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tagi -->
+    <title>wytlumacz.com - Konsultant AI Daniel Gąszczyk | Automatyzacja dla Firm</title>
+    <meta name="description" content="Zwiększ efektywność firmy o 25% w 90 dni dzięki wdrożeniom AI. Pomagam polskim MŚP automatyzować procesy, redukować koszty i zdobywać przewagę konkurencyjną. Umów bezpłatną konsultację!">
+    <meta name="keywords" content="konsultant AI Poznań, automatyzacja procesów biznesowych, wdrożenie AI w firmie, doradztwo AI, rozwiązania AI dla MŚP, Daniel Gąszczyk, generatywna AI, LLM, wytlumacz.com">
+    <meta name="author" content="Daniel Gąszczyk">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wytlumacz.com/">
+    <meta property="og:title" content="wytlumacz.com - Automatyzacja AI dla Twojego Biznesu">
+    <meta property="og:description" content="Praktyczne wdrożenia AI, które przynoszą realne oszczędności i wzrost. Doświadczenie z korporacji i startupów technologicznych.">
+    <meta property="og:image" content="https://placehold.co/1200x630/1e293b/ffffff?text=wytlumacz.com">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://wytlumacz.com/">
+    <meta property="twitter:title" content="wytlumacz.com - Automatyzacja AI dla Twojego Biznesu">
+    <meta property="twitter:description" content="Praktyczne wdrożenia AI, które przynoszą realne oszczędności i wzrost. Doświadczenie z korporacji i startupów technologicznych.">
+    <meta property="twitter:image" content="https://placehold.co/1200x630/1e293b/ffffff?text=wytlumacz.com">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://placehold.co/32x32/1e293b/ffffff?text=W.C" type="image/png">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- AOS (Animate On Scroll) Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Custom Styles -->
+    <style>
+        /* Usunięto scroll-padding-top, ponieważ obsługa przewijania jest teraz w JS */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Nagłówek -->
+    <header id="header" class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-slate-900 tracking-tight">wytlumacz<span class="text-blue-600">.com</span></a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#oferta" class="nav-link text-slate-600 hover:text-blue-600 transition">Oferta</a>
+                <a href="#proces" class="nav-link text-slate-600 hover:text-blue-600 transition">Proces</a>
+                <a href="#o-mnie" class="nav-link text-slate-600 hover:text-blue-600 transition">O mnie</a>
+                <a href="https://calendar.app.google/P6T3uHijvqBEeWim6" target="_blank" rel="noopener noreferrer" class="cta-button bg-blue-600 text-white font-semibold px-5 py-2 rounded-lg shadow-md hover:bg-blue-700">Umów konsultację</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-slate-800">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#oferta" class="nav-link block py-2 text-slate-600 hover:text-blue-600">Oferta</a>
+            <a href="#proces" class="nav-link block py-2 text-slate-600 hover:text-blue-600">Proces</a>
+            <a href="#o-mnie" class="nav-link block py-2 text-slate-600 hover:text-blue-600">O mnie</a>
+            <a href="https://calendar.app.google/P6T3uHijvqBEeWim6" target="_blank" rel="noopener noreferrer" class="mt-4 block text-center cta-button bg-blue-600 text-white font-semibold px-5 py-2 rounded-lg shadow-md hover:bg-blue-700">Umów konsultację</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sekcja Hero -->
+        <section class="pt-32 pb-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-4xl mx-auto">
+                    <h1 data-aos="fade-up" class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight">
+                        Automatyzuj swój biznes z <span class="gradient-text">AI</span>. Zwiększ efektywność o 25% w 90 dni.
+                    </h1>
+                    <p data-aos="fade-up" data-aos-delay="100" class="mt-6 text-lg md:text-xl text-slate-600 max-w-2xl mx-auto">
+                        Pomagam polskim MŚP wdrażać praktyczne rozwiązania AI bez ryzyka i wielkich inwestycji. Przekształć manualne procesy w zautomatyzowane systemy, które oszczędzają Twój czas i pieniądze.
+                    </p>
+                    <div data-aos="fade-up" data-aos-delay="200" class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+                        <a href="https://calendar.app.google/P6T3uHijvqBEeWim6" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto cta-button bg-blue-600 text-white font-bold px-8 py-4 rounded-lg text-lg shadow-lg hover:bg-blue-700">
+                            Umów bezpłatną konsultację
+                        </a>
+                        <a href="#oferta" class="nav-link w-full sm:w-auto cta-button bg-white text-blue-600 font-bold px-8 py-4 rounded-lg text-lg shadow-lg border border-slate-200 hover:bg-slate-100">
+                            Zobacz, co mogę zaoferować
+                        </a>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300" class="mt-16 max-w-4xl mx-auto">
+                    <img src="https://placehold.co/896x504/e2e8f0/1e293b?text=Automatyzacja+Procesów+AI" alt="Wizualizacja automatyzacji AI" class="rounded-2xl shadow-2xl mx-auto" onerror="this.onerror=null;this.src='https://placehold.co/896x504/e2e8f0/1e293b?text=Błąd+ładowania+obrazu';">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sekcja Doświadczenie -->
+        <section id="doswiadczenie" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Doświadczenie, któremu możesz zaufać</h2>
+                    <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">Moja wiedza to połączenie pracy w środowisku korporacyjnym i zwinności technologicznych startupów.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="bg-white p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">5+ lat w AI i analityce</h3>
+                        <p class="text-slate-600">Praktyczne doświadczenie w budowaniu i wdrażaniu rozwiązań opartych na danych.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">30+ zrealizowanych projektów</h3>
+                        <p class="text-slate-600">Od analizy danych po zaawansowane modele AI dla finansów i marketingu.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Doświadczenie w projektach >1M PLN</h3>
+                        <p class="text-slate-600">Udział w projektach, które generowały realne oszczędności i optymalizowały procesy.</p>
+                    </div>
+                </div>
+                <div class="mt-12" data-aos="fade-up">
+                    <p class="text-center text-slate-500 font-medium uppercase tracking-wider">Doświadczenie zdobywałem m.in. w:</p>
+                    <div class="mt-6 flex justify-center items-center gap-8 md:gap-16 flex-wrap">
+                        <img src="https://placehold.co/200x60/ffffff/94a3b8?text=TeamFeedback" alt="Logo TeamFeedback" class="h-10 md:h-12" onerror="this.onerror=null;this.src='https://placehold.co/200x60/ffffff/94a3b8?text=Błąd+ładowania+logo';">
+                    </div>
+                </div>
+                <div class="mt-12 bg-white p-8 rounded-xl shadow-lg" data-aos="fade-up">
+                    <h3 class="text-center text-2xl font-bold text-slate-900 mb-6">Potwierdzone kompetencje</h3>
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                        <div class="flex items-center gap-4">
+                            <img src="https://placehold.co/64x64/3b82f6/ffffff?text=AI" class="rounded-full" alt="Logo Microsoft Azure AI" onerror="this.onerror=null;this.src='https://placehold.co/64x64/3b82f6/ffffff?text=Błąd';">
+                            <div>
+                                <p class="font-semibold text-slate-800">Microsoft Azure AI Certified</p>
+                                <p class="text-slate-600">Oficjalne potwierdzenie umiejętności w zakresie technologii AI Microsoftu.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <img src="https://placehold.co/64x64/8b5cf6/ffffff?text=FDP" class="rounded-full" alt="Logo FDP Institute" onerror="this.onerror=null;this.src='https://placehold.co/64x64/8b5cf6/ffffff?text=Błąd';">
+                            <div>
+                                <p class="font-semibold text-slate-800">FDP Institute Microbadge</p>
+                                <p class="text-slate-600">Wiedza z zakresu analizy danych i automatyzacji w finansach.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sekcja Problem/Rozwiązanie -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 max-w-3xl mx-auto" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Czy Twoja firma traci pieniądze na manualnych procesach?</h2>
+                    <p class="mt-4 text-lg text-slate-600">Jeśli te problemy brzmią znajomo, AI jest odpowiedzią, której szukasz.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="border border-slate-200 p-8 rounded-xl hover:shadow-xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <div class="bg-red-100 text-red-600 rounded-full h-12 w-12 flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Godziny stracone na raportowaniu</h3>
+                        <p class="text-slate-600">Pracownicy spędzają 3h dziennie na ręcznym tworzeniu raportów, zamiast na analizie i podejmowaniu decyzji.</p>
+                    </div>
+                    <div class="border border-slate-200 p-8 rounded-xl hover:shadow-xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="200">
+                        <div class="bg-yellow-100 text-yellow-600 rounded-full h-12 w-12 flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h3m-3-7h.01M9 10h.01M12 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Błędy w prognozowaniu</h3>
+                        <p class="text-slate-600">Nawet 20% błędów w prognozach popytu prowadzi do nadmiaru zapasów lub utraconych szans sprzedaży.</p>
+                    </div>
+                    <div class="border border-slate-200 p-8 rounded-xl hover:shadow-xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="300">
+                        <div class="bg-blue-100 text-blue-600 rounded-full h-12 w-12 flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Powtarzalne zapytania klientów</h3>
+                        <p class="text-slate-600">Ponad 50% zapytań do obsługi klienta to te same pytania, które może obsłużyć inteligentny chatbot 24/7.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sekcja Oferta -->
+        <section id="oferta" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 max-w-3xl mx-auto" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Praktyczne rozwiązania AI dla Twojej firmy</h2>
+                    <p class="mt-4 text-lg text-slate-600">Wybierz pakiet dopasowany do Twoich potrzeb i etapu rozwoju. Ceny są transparentne, a zwrot z inwestycji mierzalny.</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+                    <!-- AI Strategy Audit & PoC -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+                        <div>
+                            <h3 class="text-2xl font-bold text-blue-600">Audyt i Prototyp (PoC)</h3>
+                            <p class="text-slate-600 mt-2">Zaczynamy od analizy, by stworzyć działający prototyp i udowodnić wartość AI.</p>
+                            <p class="text-4xl font-extrabold text-slate-900 my-6">od 5k <span class="text-lg font-medium text-slate-500">PLN</span></p>
+                            <ul class="text-slate-700 space-y-3 mb-6">
+                                <li class="flex items-center gap-3"><svg class="h-5 w-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Analiza procesów i mapa drogowa</li>
+                                <li class="flex items-center gap-3"><svg class="h-5 w-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Działający prototyp (PoC)</li>
+                                <li class="flex items-center gap-3"><svg class="h-5 w-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Mierzalne wyniki i szacowany ROI</li>
+                            </ul>
+                        </div>
+                        <p class="text-sm text-slate-500 text-center mt-4">Czas realizacji: 2-6 tygodni</p>
+                    </div>
+                    <!-- Full Implementation -->
+                    <div class="bg-blue-600 text-white p-8 rounded-xl shadow-2xl flex flex-col justify-between ring-4 ring-blue-300" data-aos="fade-up" data-aos-delay="200">
+                        <div>
+                            <p class="text-sm font-bold uppercase tracking-wider text-blue-200">Najpopularniejszy wybór</p>
+                            <h3 class="text-2xl font-bold mt-2">Pełne Wdrożenie</h3>
+                            <p class="text-blue-200 mt-2">Kompleksowe wdrożenie i skalowanie rozwiązania AI w całej organizacji.</p>
+                            <p class="text-4xl font-extrabold my-6">od 50k <span class="text-lg font-medium text-blue-200">PLN</span></p>
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-center gap-3"><svg class="h-5 w-5 text-green-300 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Wszystko z pakietu Audyt i PoC</li>
+                                <li class="flex items-center gap-3"><svg class="h-5 w-5 text-green-300 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Pełna automatyzacja procesów</li>
+                                <li class="flex items-center gap-3"><svg class="h-5 w-5 text-green-300 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Szkolenie Twojego zespołu</li>
+                                <li class="flex items-center gap-3"><svg class="h-5 w-5 text-green-300 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Integracja z kluczowymi systemami</li>
+                            </ul>
+                        </div>
+                        <p class="text-sm text-blue-200 text-center mt-4">Czas realizacji: 3-6 miesięcy</p>
+                    </div>
+                    <!-- Ongoing Support -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+                        <div>
+                            <h3 class="text-2xl font-bold text-blue-600">Wsparcie i Rozwój</h3>
+                            <p class="text-slate-600 mt-2">Ciągła optymalizacja, monitoring i rozwój wdrożonych systemów.</p>
+                            <p class="text-4xl font-extrabold text-slate-900 my-6">od 5k <span class="text-lg font-medium text-slate-500">PLN/mc</span></p>
+                            <ul class="text-slate-700 space-y-3 mb-6">
+                                <li class="flex items-center gap-3"><svg class="h-5 w-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Monitoring działania systemów</li>
+                                <li class="flex items-center gap-3"><svg class="h-5 w-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Regularne aktualizacje i optymalizacje</li>
+                                <li class="flex items-center gap-3"><svg class="h-5 w-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Wsparcie priorytetowe i konsultacje</li>
+                            </ul>
+                        </div>
+                        <p class="text-sm text-slate-500 text-center mt-4">Model abonamentowy</p>
+                    </div>
+                </div>
+            </section>
+
+        <!-- Sekcja Case Studies (Przykładowe) -->
+        <section id="case-studies" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 max-w-3xl mx-auto" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Co jest możliwe dzięki AI? Przykłady wdrożeń</h2>
+                    <p class="mt-4 text-lg text-slate-600">Oto przykładowe rezultaty, jakie moi klienci mogą osiągnąć, automatyzując kluczowe obszary swojej działalności.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-slate-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://placehold.co/600x400/a5b4fc/1e293b?text=E-commerce" alt="Firma handlowa" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/a5b4fc/1e293b?text=Błąd';">
+                        <div class="p-6">
+                            <p class="text-sm font-semibold text-indigo-600">FIRMA HANDLOWA</p>
+                            <h3 class="text-xl font-bold mt-2 text-slate-900">Zmniejszenie kosztów magazynowania o 30%</h3>
+                            <p class="mt-2 text-slate-600">Dzięki predykcyjnej analizie popytu, firma optymalizuje stany magazynowe, unikając nadwyżek i braków towaru.</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://placehold.co/600x400/818cf8/1e293b?text=Fintech" alt="Startup fintech" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/818cf8/1e293b?text=Błąd';">
+                        <div class="p-6">
+                            <p class="text-sm font-semibold text-indigo-600">STARTUP FINTECH</p>
+                            <h3 class="text-xl font-bold mt-2 text-slate-900">Automatyzacja onboardingu klienta - 50% szybciej</h3>
+                            <p class="mt-2 text-slate-600">Wdrożenie AI do analizy dokumentów i weryfikacji tożsamości skraca proces onboardingu z godzin do minut.</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="300">
+                        <img src="https://placehold.co/600x400/6366f1/1e293b?text=Marketing" alt="Agencja marketingowa" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/6366f1/1e293b?text=Błąd';">
+                        <div class="p-6">
+                            <p class="text-sm font-semibold text-indigo-600">AGENCJA MARKETINGOWA</p>
+                            <h3 class="text-xl font-bold mt-2 text-slate-900">Zwiększenie konwersji z kampanii o 40%</h3>
+                            <p class="mt-2 text-slate-600">System AI do scoringu leadów i personalizacji komunikacji pozwala skupić się na najbardziej obiecujących klientach.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sekcja Proces -->
+        <section id="proces" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 max-w-3xl mx-auto" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Przejrzysty proces współpracy</h2>
+                    <p class="mt-4 text-lg text-slate-600">Od pierwszego spotkania do pełnego wdrożenia, działam według sprawdzonego planu, który gwarantuje rezultaty.</p>
+                </div>
+                <div class="relative max-w-4xl mx-auto">
+                    <!-- Linia czasu -->
+                    <div class="hidden md:block absolute top-0 bottom-0 left-1/2 w-0.5 bg-slate-200 -translate-x-1/2"></div>
+                    
+                    <!-- Krok 1 -->
+                    <div class="relative md:flex items-center w-full mb-8" data-aos="fade-right">
+                        <div class="md:w-1/2 md:pr-8 md:text-right">
+                            <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-500">
+                                <p class="text-blue-600 font-bold">Krok 1</p>
+                                <h3 class="text-xl font-bold text-slate-900">Darmowa konsultacja (30 min)</h3>
+                                <p class="text-slate-600 mt-2">Omawiamy Twoje cele, wyzwania i sprawdzamy, czy AI jest dla Ciebie.</p>
+                            </div>
+                        </div>
+                        <div class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-12 h-12 bg-blue-600 text-white rounded-full flex-shrink-0 flex items-center justify-center text-xl font-bold z-10">1</div>
+                        <div class="md:w-1/2 md:pl-8"></div>
+                    </div>
+                    <!-- Krok 2 -->
+                    <div class="relative md:flex flex-row-reverse items-center w-full mb-8" data-aos="fade-left">
+                        <div class="md:w-1/2 md:pl-8">
+                            <div class="bg-white p-6 rounded-xl shadow-lg border-r-4 md:border-r-0 md:border-l-4 border-blue-500">
+                                <p class="text-blue-600 font-bold">Krok 2</p>
+                                <h3 class="text-xl font-bold text-slate-900">Audyt i analiza potrzeb</h3>
+                                <p class="text-slate-600 mt-2">Głęboko analizuję Twoje procesy, aby znaleźć największy potencjał do automatyzacji.</p>
+                            </div>
+                        </div>
+                        <div class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-12 h-12 bg-blue-600 text-white rounded-full flex-shrink-0 flex items-center justify-center text-xl font-bold z-10">2</div>
+                        <div class="md:w-1/2 md:pr-8"></div>
+                    </div>
+                    <!-- Krok 3 -->
+                    <div class="relative md:flex items-center w-full mb-8" data-aos="fade-right">
+                        <div class="md:w-1/2 md:pr-8 md:text-right">
+                             <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-500">
+                                <p class="text-blue-600 font-bold">Krok 3</p>
+                                <h3 class="text-xl font-bold text-slate-900">Propozycja i wycena</h3>
+                                <p class="text-slate-600 mt-2">Otrzymujesz konkretną propozycję z planem działania, harmonogramem i wyceną.</p>
+                            </div>
+                        </div>
+                        <div class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-12 h-12 bg-blue-600 text-white rounded-full flex-shrink-0 flex items-center justify-center text-xl font-bold z-10">3</div>
+                        <div class="md:w-1/2 md:pl-8"></div>
+                    </div>
+                     <!-- Krok 4 -->
+                    <div class="relative md:flex flex-row-reverse items-center w-full mb-8" data-aos="fade-left">
+                        <div class="md:w-1/2 md:pl-8">
+                            <div class="bg-white p-6 rounded-xl shadow-lg border-r-4 md:border-r-0 md:border-l-4 border-blue-500">
+                                <p class="text-blue-600 font-bold">Krok 4</p>
+                                <h3 class="text-xl font-bold text-slate-900">Implementacja z milestone'ami</h3>
+                                <p class="text-slate-600 mt-2">Wdrażam rozwiązanie etapami, regularnie informując Cię o postępach.</p>
+                            </div>
+                        </div>
+                        <div class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-12 h-12 bg-blue-600 text-white rounded-full flex-shrink-0 flex items-center justify-center text-xl font-bold z-10">4</div>
+                        <div class="md:w-1/2 md:pr-8"></div>
+                    </div>
+                     <!-- Krok 5 -->
+                    <div class="relative md:flex items-center w-full" data-aos="fade-right">
+                        <div class="md:w-1/2 md:pr-8 md:text-right">
+                             <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-500">
+                                <p class="text-blue-600 font-bold">Krok 5</p>
+                                <h3 class="text-xl font-bold text-slate-900">Wsparcie i optymalizacja</h3>
+                                <p class="text-slate-600 mt-2">Po wdrożeniu zapewniam wsparcie techniczne i optymalizuję działanie systemu.</p>
+                            </div>
+                        </div>
+                        <div class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-12 h-12 bg-blue-600 text-white rounded-full flex-shrink-0 flex items-center justify-center text-xl font-bold z-10">5</div>
+                        <div class="md:w-1/2 md:pl-8"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sekcja O Mnie / Value Proposition -->
+        <section id="o-mnie" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/3" data-aos="fade-right">
+                        <div class="w-64 h-64 md:w-80 md:h-80 mx-auto rounded-full overflow-hidden shadow-2xl">
+                           <img src="file-id://uploaded:_MG_6783.jpg-deb44378-9673-4e11-bead-400cf74a11a7" alt="Portret Daniel Gąszczyk" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x400/1e293b/ffffff?text=DG';">
+                        </div>
+                    </div>
+                    <div class="md:w-2/3" data-aos="fade-left">
+                        <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Partner, który rozumie Twój biznes</h2>
+                        <p class="mt-6 text-lg text-slate-600 leading-relaxed">
+                            Łączę doświadczenie z korporacji z praktyczną wiedzą startupową, aby dostarczyć rozwiązania AI, które rzeczywiście działają w polskich realiach biznesowych. Nie jestem teoretykiem – jestem praktykiem, który sam budował i wdrażał systemy AI.
+                        </p>
+                        <ul class="mt-6 space-y-4">
+                           <li class="flex items-start gap-3">
+                                <svg class="h-6 w-6 text-blue-600 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                <div>
+                                    <h4 class="font-semibold text-slate-800">Praktyczne podejście, nie teoria</h4>
+                                    <p class="text-slate-600">Dostarczam rozwiązania, które rozwiązują realne problemy, a nie tylko dobrze wyglądają na papierze.</p>
+                                </div>
+                           </li>
+                           <li class="flex items-start gap-3">
+                                <svg class="h-6 w-6 text-blue-600 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                <div>
+                                    <h4 class="font-semibold text-slate-800">ROI w ciągu 3-6 miesięcy</h4>
+                                    <p class="text-slate-600">Moim celem jest, aby Twoja inwestycja zwróciła się jak najszybciej, generując mierzalne oszczędności.</p>
+                                </div>
+                           </li>
+                           <li class="flex items-start gap-3">
+                                <svg class="h-6 w-6 text-blue-600 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                <div>
+                                    <h4 class="font-semibold text-slate-800">Bez vendor lock-in i ukrytych kosztów</h4>
+                                    <p class="text-slate-600">Stawiam na transparentność i rozwiązania, które dają Ci pełną kontrolę i elastyczność.</p>
+                                </div>
+                           </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sekcja CTA / Kontakt -->
+        <section id="kontakt" class="py-20 bg-slate-900 text-white">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center" data-aos="fade-up">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold">Gotowy na rewolucję AI w Twojej firmie?</h2>
+                        <p class="mt-4 text-lg text-slate-300">Zróbmy pierwszy krok. Wypełnij formularz lub skontaktuj się ze mną bezpośrednio. Pierwsza 30-minutowa konsultacja jest całkowicie bezpłatna i niezobowiązująca.</p>
+                        <div class="mt-8 space-y-4">
+                            <a href="mailto:dagaszczyk@gmail.com" class="flex items-center gap-3 text-slate-200 hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                                <span>dagaszczyk@gmail.com</span>
+                            </a>
+                            <a href="tel:+48694181385" class="flex items-center gap-3 text-slate-200 hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                                <span>(+48) 694 181 385</span>
+                            </a>
+                             <a href="https://www.linkedin.com/in/daniel-gaszczyk" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-slate-200 hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                                <span>/in/daniel-gaszczyk</span>
+                            </a>
+                        </div>
+                        <div class="mt-8">
+                            <p class="text-slate-400">Lub umów się bezpośrednio w moim kalendarzu:</p>
+                            <a href="https://calendar.app.google/P6T3uHijvqBEeWim6" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block cta-button bg-white text-blue-600 font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-slate-200">
+                                Otwórz kalendarz
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-2xl">
+                        <form id="contact-form">
+                            <h3 class="text-2xl font-bold text-slate-900 mb-6">Napisz do mnie</h3>
+                            <div id="form-message" class="hidden mb-4 p-4 rounded-md"></div>
+                            <div class="space-y-4">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-slate-700">Imię i nazwisko</label>
+                                    <input type="text" id="name" name="name" required class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 text-slate-800 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-slate-700">Email</label>
+                                    <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 text-slate-800 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-slate-700">Wiadomość</label>
+                                    <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 text-slate-800 focus:outline-none focus:ring-blue-500 focus:border-blue-500"></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit" class="w-full cta-button bg-blue-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                        Wyślij wiadomość
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-800 text-slate-400">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; <span id="year"></span> wytlumacz.com. Wszelkie prawa zastrzeżone.</p>
+            <p class="text-sm mt-2">Daniel Gąszczyk | Poznań, Polska</p>
+        </div>
+    </footer>
+    
+    <!-- AOS (Animate On Scroll) Library JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        // Inicjalizacja animacji
+        AOS.init({
+            duration: 800, // czas trwania animacji w ms
+            once: true,    // czy animacja ma się wykonać tylko raz
+            offset: 50,    // offset (w px) od oryginalnego punktu wyzwalającego
+        });
+
+        // --- Poprawiona obsługa płynnego przewijania ---
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.getElementById('header');
+            const headerHeight = header ? header.offsetHeight : 0;
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            document.querySelectorAll('a.nav-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        const targetPosition = targetElement.offsetTop - headerHeight;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+
+                        // Zamknij menu mobilne po kliknięciu
+                        if (!mobileMenu.classList.contains('hidden')) {
+                            mobileMenu.classList.add('hidden');
+                        }
+                    }
+                });
+            });
+        });
+
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Contact form submission
+        const contactForm = document.getElementById('contact-form');
+        const formMessage = document.getElementById('form-message');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // This is a mock submission. In a real application, you would
+            // send the data to a server or a service like Formspree.
+            formMessage.classList.remove('hidden', 'bg-red-100', 'text-red-700');
+            formMessage.classList.add('bg-green-100', 'text-green-700');
+            formMessage.textContent = 'Dziękuję za wiadomość! Skontaktuję się z Tobą wkrótce.';
+            
+            contactForm.reset();
+
+            setTimeout(() => {
+                formMessage.classList.add('hidden');
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
